@@ -1,2 +1,5 @@
 # django-angular
 Web based project with Django and Angular
+
+
+npm install --save ag-grid-community ag-grid-angular
