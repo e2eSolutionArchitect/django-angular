@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UploadFileComponent } from './upload-file/upload-file.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgGridModule} from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AgGridModule} from 'ag-grid-angular';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
