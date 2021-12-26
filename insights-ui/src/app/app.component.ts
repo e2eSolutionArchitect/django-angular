@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'Data Insights Hub';
 
   columnDefs: ColDef[] = [
-    { field: 'make', sortable: true, filter: true },
+    { field: 'make', sortable: true, filter: true ,checkboxSelection: true},
     { field: 'model', sortable: true, filter: true },
     { field: 'price', sortable: true, filter: true }
 ];
@@ -20,6 +20,6 @@ export class AppComponent {
 rowData: Observable<any[]>;
 
    constructor(private http: HttpClient) {
-       this.rowData = this.http.get<any[]>('https://www.ag-grid.com/example-assets/small-row-data.json');
+       this.rowData = this.http.get<any[]>('https://www.ag-grid.com/example-assets/row-data.json');
    }
 }
