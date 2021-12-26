@@ -9,7 +9,7 @@ import { ColDef } from 'ag-grid-community';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Data Insights Hub';
+  title = 'InsightsUI';
 
   columnDefs: ColDef[] = [
     { field: 'make', sortable: true, filter: true ,checkboxSelection: true},
